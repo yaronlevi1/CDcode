@@ -1,0 +1,34 @@
+md basic_repo
+cd basic_repo
+git init
+
+copy nul assignemnt.txt
+copy nul some_file.html
+git add .
+git commit -m " commit num 1"
+
+
+git remote add origin https://github.com/yaronlevi1/basic_repo.git
+git push -u origin master
+
+
+git add .
+git commit -m "commit num  2"
+git push -u origin master
+
+
+
+
+
+cd GitHubRepoAssignment
+git init
+copy nul readme.md
+atom .
+git status
+git add .
+git commit -m "commit num1"
+git remote add origin https://github.com/yaronlevi1/GitHubRepoAssignment.git
+git push -u origin master
+
+
+

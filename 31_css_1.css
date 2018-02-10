@@ -1,0 +1,71 @@
+
+
+
+p{             /*tag*/   
+	color:blue; 
+	background-color: rgba(255, 0, 191, 0.089);
+	border-right: 10px groove rgb(100,100,100);
+    border-left: 10px groove rgb(200,200,200);
+}
+
+#important{   /*ID*/ 
+	font-size:36px;
+	background-image: url("fakeblog_media/safe_computer.jpg");
+}
+
+.info{          /*class*/ 
+	background-color: green;
+	border:1px solid black;
+}
+
+
+
+a {
+    width: 25px;
+  }
+  div {
+    width: 100%;
+	height: 200px;
+	border: 1px solid #000000;
+  }
+  img {
+    width: 250px;
+  }
+
+
+  div {
+	//overflow: scroll; /*what to do when item too large*/
+	background-image: url("fakeblog_media/safe_computer.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+
+  button {
+	border: 2px dotted green;
+	border-radius: 5px;
+  }
+  
+  span {
+    font-style: italic;
+  }
+ 
+
+
+  color: #ffffff;
+  color: rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: "helvetica neue", arial, verdana, sans-serif;
+
+  font-size: 10pt;
+  font-size: 14px;
+  font-size: 1.2em;
+  font-size: 80%;
+  font-style: italic;
+
+  font-weight: bold;
+  font-weight: 600;
+

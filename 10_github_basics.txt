@@ -8,7 +8,7 @@ git add .
 git commit -m " commit num 1"
 
 
-git remote add origin https://github.com/yaronlevi1/basic_repo.git
+git remote add origin https://github.com/yaronlevi1/CDcode.git
 git push -u origin master
 
 

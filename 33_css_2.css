@@ -1,0 +1,23 @@
+p{
+	background-color: grey;
+	display: inline;
+}
+a{
+	background-color: yellow;
+	display: block;
+}
+ul{
+	background-color: blue;
+	display: inline;
+}
+ul li{
+	background-color: green;
+	display: inline;
+}
+
+
+/* Inline elements: <a>, <img>, <span>, <input>, <label>, <select>, <textarea> */
+ /* Block elements: <body>, <div>, <form>, <h1>-<h6>, <p>, <table>, <ul>, <ol>, <li>  */
+ /* It's invalid to put block elements inside inline elements. */
+
+ /* The possible values for display are: inline, block, none, and inline-block. */

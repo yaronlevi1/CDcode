@@ -10,7 +10,8 @@ p{             /*tag*/
 
 #important{   /*ID*/ 
 	font-size:36px;
-	background-image: url("fakeblog_media/safe_computer.jpg");
+  background-image: url("fakeblog_media/safe_computer.jpg");
+  outline: 1px dotted red;
 }
 
 .info{          /*class*/ 

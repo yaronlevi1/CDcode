@@ -1,0 +1,130 @@
+.container{
+    width: 1000px;
+    margin-left: 150px;
+    background-image: radial-gradient(500px 500px ellipse at 50% 50%,  #6e5963, #2d1b20);
+}
+.header{
+    background-color:#f6f6f6 ;
+    padding: 5px 20px;
+}
+.header h1{
+    display: inline-block ;
+    width: 550px;
+    font-family: "Comic Sans MS";
+    margin: 0px ;
+}
+.header h2{
+    display: inline-block ;
+    margin: 0px ;
+    font-family: Arial;
+}
+.contenttop{
+    padding: 20px ;
+}
+.photo_of_me{
+    width:450px ;
+    height:296px ;
+    border: 6px solid #c0c0c0 ;
+    display: inline-block;
+    margin-right: 30px;
+}
+.photo_of_me img{
+    width:450px; 
+}
+.about{
+    width:450px; 
+    height:307px ;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to right,#fffeff  , #daccd9);
+}
+h3{
+    margin: 0px;
+    font-family: Helvetica;
+    color: #feffff; 
+    padding: 5px 10px;
+    background: linear-gradient(#aeaeb2, #8a8894,#aeaeb2);
+}
+.about p{
+    margin: 16px 10px;
+}
+.about a{
+    margin: 0px 10px;
+    color: black;
+}
+.contentbottom{
+padding:0px 20px 20px 20px;
+}
+.lamode ,.family ,.five {
+    width:303px; 
+    height:520px ;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to right,#fffeff  , #daccd9);
+}
+.family {
+margin: 0px 15px;
+}
+.contentbottom img{
+    width:303px ;
+}
+.contentbottom p{
+    height:92px ;
+    margin: 10px 10px;
+}
+h5{
+    margin: 0px;
+    font-family: Helvetica;
+    color: #feffff; 
+    padding: 7px 10px;
+    background: linear-gradient(#aeaeb2, #8a8894,#aeaeb2);
+}
+.symbol {
+    padding: 0px 10px;
+}
+.symbol img{
+    width:42px;
+    margin: 10px 5px;
+    display: inline-block;
+}
+.projectfooter{
+    text-align: center;
+    display: block;
+}
+.projectfooter a{
+    background: #407d60;
+    padding: 3px;
+    color: #fdfefd;
+    text-decoration: none;
+    border: 2px solid #2b5b45;
+    border-radius: 7px;
+}
+
+footer{
+    outline: 2px dotted red ;
+    background-color:#f6f6f6 ;
+    padding: 5px 20px;
+}
+ul{
+    margin:0px;
+    text-align: center;
+}
+li {
+    display: inline;
+}
+ul li a {
+    text-decoration: none;
+    color:black;
+}
+ul li img{
+    width:20px;
+    position: relative;
+    top: 5px;
+}
+.social ul {
+    margin-top: 2px;
+}
+.social ul li a {
+    text-decoration: underline;
+    color:black;
+}

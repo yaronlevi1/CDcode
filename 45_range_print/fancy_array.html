@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Range Print</title>
+        <script>
+            "use strict"; 
+            function fancyarray (user_arr, user_sym, reversed) {
+
+                if (reversed!=true) {
+                    for (var i = 0 ; i<user_arr.length ; i++) {
+                    console.log(i+" "+ user_sym+" " + user_arr[i])
+                    }
+                } else if (reversed==true) {
+                    for (var i = user_arr.length-1 ; i>=0 ; i--) {
+                    console.log(i+" "+ user_sym+" " + user_arr[i])
+                    }
+                }
+            }
+            var myarr = ["James", "Jill", "Jane", "Jack"]
+            fancyarray (myarr, "&&&", true) 
+        </script>
+    </head>
+</html>

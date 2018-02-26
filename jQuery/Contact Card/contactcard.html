@@ -1,0 +1,71 @@
+<html>
+   <head>
+       <title>The Codingdojo ColorClicker!</title>
+       <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('form').submit(function(){
+                    var NAME = $('input[name="first_name"]').val() + " " + $('input[name="last_name"]').val() ;
+                    var DE = $('textarea[name="description"]').val() ;
+                    $('input[name="first_name"],input[name="last_name"], textarea').val("");
+                    $('#right').append('<div class="contact"> <h1>' + NAME +  '</h1><button>Click for description!</button> <p hidden> '+DE+'</div>') ;
+                    return false;        
+                })
+            });   
+            $(document).on('click', 'button', function(){
+                $(this).siblings('h1').hide();
+                $(this).hide();
+                $(this).siblings('p').show();
+            });
+        </script>
+      <style type="text/css">
+          *{
+             font-family: sans-serif;
+             margin: 0px;
+          }
+          textarea {
+              width: 250px;
+              height: 120px;
+              margin: 10px 0px;
+          }
+          #left {
+              margin: 20px 100px 0px 20px;
+              display: inline-block;
+          }
+          #right {
+              display: inline-block;
+              vertical-align: top;
+              margin: 20px 0px 0px 0px; 
+          }
+          .contact {
+              width: 350px;
+              height: 80px;
+              text-align: center;
+              border: 2px solid black;
+              padding: 10px 0px 0px 0px;
+              margin-bottom: 20px;
+          }
+          .contact button {
+              border:0px;
+              background-color: white;
+              vertical-align: bottom;
+              margin-top: 20px;
+          }
+      </style>
+   </head>
+   <body>
+    <div id="left">
+    <form action="process.php" method="post">       
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name"><br><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name"><br><br>
+        <p>Description :</p>
+        <textarea name="description"></textarea><br><br>
+        <input id = "add" type="submit" value="Add User">
+    </div>
+    <div id="right">
+    </div>
+    </form>
+   </body>
+</html>

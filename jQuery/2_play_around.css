@@ -1,0 +1,49 @@
+body {
+    height: 1800px;
+    outline: 2px dotted red;
+    width: 500px;
+}
+
+
+
+#hide {
+    background-color: yellow;
+}
+
+
+#show {
+    background-color: green;
+}
+
+#toggle {
+    background-color: pink;
+}
+
+
+#slideUp {
+    background-color: blue;
+}
+#slideDown {
+    background-color: red;
+}
+#slideToggle {
+    background-color: cyan ;
+}
+
+
+#fadeOut {
+    background-color: greenyellow;
+}
+
+#fadeIn {
+    background-color: goldenrod ;
+}
+
+.yellow {
+    color: yellow;
+}
+
+
+.green {
+    color: green;
+}

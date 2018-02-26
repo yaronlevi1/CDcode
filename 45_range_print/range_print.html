@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Range Print</title>
+        <script>
+
+            function printRange (arg1,arg2,arg3) {            
+                if (arguments.length===3) {
+                    var from = arg1;
+                    var to = arg2;
+                    var increment = arg3;
+                }
+                else if (arguments.length===2) {
+                    var from = arg1;
+                    var to = arg2;
+                    var increment = 1;
+                }
+                else if (arguments.length===1) {
+                    var from = 0;
+                    var to = arg1;
+                    var increment = 1;
+                }
+                for (var i=from ; i<to ; i=i+increment ) {
+                    console.log(i);    
+                }
+            }
+            console.log("output of printRange:")
+            printRange (2,10,2)
+            console.log("output of printRange:")
+            printRange (4,8)
+            console.log("output of printRange:")
+            printRange (4)
+            console.log("output of printRange:")
+            printRange (-10,3,2)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

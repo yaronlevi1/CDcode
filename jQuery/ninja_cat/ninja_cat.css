@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 200px;
+    margin: 20px auto ;
+}
+
+img {
+    margin: -3px auto 0px auto;
+}
+

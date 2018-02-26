@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    height: 2500px;
+    outline: 2px dotted green;
+}
+div {
+    width: 700px ;
+    margin: 0px auto;
+    border-bottom: 3px solid black;
+    //outline: 2px dotted red;
+    padding-bottom: 10px;
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+button {
+vertical-align: middle;
+margin: 0px 60px 0px 40px;
+box-shadow: 3px 3px 3px;
+width: 100px;
+font-size: large;
+}
+p {
+    display: inline-block;
+    font-size: large;
+}
+h4 {
+    color: blue;
+    margin: 10px 0px 0px 40px;   
+}
+.red {
+    color: red;
+}
+#green {
+    color: green;
+}
+input {
+    text-align: center;
+    margin: 20px auto 0px auto;
+    display: block;
+}

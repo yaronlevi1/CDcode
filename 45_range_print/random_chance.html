@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Random CHance</title>
+        <script>
+
+            function random_chance (num_qtr) {            
+                while (num_qtr > 0) {
+                console.log("num_qtr before game = "+ num_qtr);
+                var win =  Math.trunc(Math.random() * 101) + 1 ;
+                if (win != 1 ) {
+                    num_qtr -- ;
+                    console.log("LOST, num_qtr after game = "+ num_qtr);
+                } else {
+                  gg =Math.trunc(Math.random() * 51)+50 ;
+                  num_qtr += gg
+                  console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Won "+ gg + " coins. num_qtr after game = "+ num_qtr);
+                  break
+                }
+                }
+                if (num_qtr == 0) {
+                    console.log("you lost all your coins!")
+                } else {
+                    console.log("you have "+num_qtr+ " coins!")
+                    }
+               
+            }
+            //random_chance (200) ;
+
+
+            function playSlots(numOfQuarters){
+                while(numOfQuarters > 0){
+                    var win = Math.floor(Math.random()*100);
+                    if(win == 1){
+                    var amountWon = Math.random()*50 + 50
+                    console.log(amountWon + numOfQuarters)
+                    }
+                }
+                console.log( 0)
+            }
+            playSlots (20)
+
+            
+                
+        </script>
+    </head>
+</html>

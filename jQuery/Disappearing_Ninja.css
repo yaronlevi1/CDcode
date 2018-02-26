@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 700px;
+    margin: 0px auto ;
+    outline: 2px red dotted;
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+    border: 3px solid black;
+}
+
+button {
+    width: 100px;
+    color: blue;
+    padding: 10px;
+    display: block;
+}

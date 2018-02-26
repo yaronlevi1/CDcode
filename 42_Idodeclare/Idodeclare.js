@@ -1,6 +1,6 @@
 
 
-var num1 = 5;
+var num1 = 6;
 var num2 = 3/2;
 var num3 = -1;
 var num4 = 1/0 ;

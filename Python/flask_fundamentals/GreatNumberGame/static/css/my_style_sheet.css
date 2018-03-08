@@ -1,0 +1,41 @@
+div {
+    width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+
+#badguess {
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    background-color: red;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 100px 0px 100px 0px;
+    color: white;
+   
+}
+
+#goodguess {
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    background-color: green;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 100px 0px 40px 0px;
+    color: white;
+   
+}
+
+#again {
+    margin-top:60px
+}
+
+

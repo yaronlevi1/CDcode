@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algo 1</title>
+    <script>
+        function myfunc(a) {
+            var j=0
+            for (var i=0 ; i<a.length ; i++) {                
+                
+                if (a[i]==a[i-1]) {
+                j++
+                }
+                a[i]=a[i+j]
+            }
+
+console.log(j)
+            //for (var k=0 ; k<j; k++) {a.pop()}
+
+            console.log(a)   
+        }
+
+
+        console.log(myfunc([1,2,3,3,5]))
+
+        
+ 
+
+ 
+        
+
+    </script>   
+</head>
+</html>

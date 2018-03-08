@@ -1,0 +1,41 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Dojo Survey</title>
+        <title>Landing Page Assignment</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+    </head>
+    <body>
+        <form action="/formsub" method="post">
+            <h1>My Form</h1>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" name="name"><br><br>
+            
+            <label for="male">Male</label>
+            <input type="radio"  name="gender" value="male">
+            
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female">
+
+            <label for="other">Other</label>
+            <input type="radio" name="gender" value="other"><br><br>
+
+            <label for="favoritelanguage">Favorite Language</label>
+            <select id="favoritelanguage" name="favoritelanguage">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Python">Python</option>
+                    <option value="R">R</option>
+            </select><br><br>
+
+            <p> Comment (optional):</p>
+            <textarea name="Comment"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>

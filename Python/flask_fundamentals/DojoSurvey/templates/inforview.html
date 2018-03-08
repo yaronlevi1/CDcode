@@ -1,0 +1,20 @@
+
+<html>
+        <head>
+           <title>Landing Page Assignment</title>
+           <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+           <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+        </head>
+        <body>
+          <h1> Your Answers</h1>
+          <p>name is {{ result["name"] }}</p>
+          <p>gender is {{ result["gender"] }}</p>
+          <p> favorite language is {{ result["favoritelanguage"] }}</p>
+          <p>comment is {{ result["Comment"] }}</p>
+
+          <form action="/goback">
+          <input type="submit" value="Submit"> 
+        </form>
+
+        </body>
+    </html>

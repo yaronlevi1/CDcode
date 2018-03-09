@@ -1,0 +1,41 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper{
+    width: 400px;    
+    margin: 20px auto;
+    padding: 20px auto;
+    display: block;
+
+}
+h1 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+label {
+    text-align: left;
+    float: left;
+     width: 100px;
+     margin-right: 10px;
+}
+
+input {
+    width: 160px;
+    height: 16px;
+}
+
+#submit {
+    width: 60px;
+    height: 30px;
+}
+
+p{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#wrapper {
+    margin:20px auto;
+    width: 950px;
+    border: 1px dotted red;
+    padding: 20px;
+}
+
+span {
+    color: blue;
+    border: 3px solid black;
+    padding: 1px 40px;
+}
+
+
+.location {
+    border: 1px green solid;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 20px 20px 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.location h3{
+margin-top: 10px;
+}
+
+.location input{
+    margin-top: 30px;
+    width: 90px;
+    height: 20px;
+}
+
+#activities {
+    border: black solid 2px;
+    margin-top: 10px;
+    width: 835px;
+    height: 300px;
+    padding: 20px;
+    overflow: scroll;
+    
+}
+
+
+#again {
+    margin-top: 30px;
+    width: 120px;
+    height: 25px;
+}
+
+
+
+
+/*
+        
+<!-- 
+
+            <h1> Welcome to the Great Number Game!</h1>
+            <h3> I am thinking of a number between 1 and 100 </h3>
+            <h3> Take a guess! </h3>
+            {% if session["guess"]==None %}
+            <form  action="/guess"  method="post">    
+                <input type="text" name="userguess"><br><br>
+                <input type="submit" value="Submit ">
+            </form>
+            {% endif %} 
+            {% if session["guess"]!=None and session["guess"] < session["rand"] %}
+                <div id="badguess"> Too low... </div>
+                <form  action="/guess"  method="post">    
+                    <input type="text" name="userguess"><br><br>
+                    <input type="submit" value="Submit ">
+                </form>
+            {% endif %} 
+            {% if session["guess"]!=None and session["guess"] > session["rand"] %}
+            <div id="badguess"> Too high... </div>
+            <form  action="/guess"  method="post">    
+                <input type="text" name="userguess"><br><br>
+                <input type="submit" value="Submit ">
+            </form>
+            {% endif %} 
+            {% if session["guess"]!=None and session["guess"] == session["rand"] %}
+            <div id="goodguess"> {{ session["rand"] }} was the number! 
+            <form  action="/reset"  method="post">    
+                <input id ="again" type="submit" value="Play again!">
+            </form>
+            </div>
+            {% endif %} 
+        </div>
+    </body>
+</html> -->
+
+*/

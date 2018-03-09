@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
 import random 
+import datetime
+
 
 app = Flask(__name__)
 app.secret_key = 'ThisIsSecret' 
@@ -8,8 +10,8 @@ app.secret_key = 'ThisIsSecret'
 def index():
   session['count'] +=1
   if session['count']==1:
-    session["score"]=0
-    session["activity"]=""                  
+    session["score"]=0  
+    session["history"] = [] 
   return render_template("index.html")
 
 @app.route('/process_money', methods=['POST'])
@@ -24,10 +26,10 @@ def process_money():
   if session["building"] == "Casino":
     session["delta"]=random.randrange(-50, 51) 
   session["score"]+=session["delta"]
-  session["activity"] += " <p> xxx </p>  "
-  print(request.form["building"], session["delta"], session["score"])
+  session["history"].append ( [ session["count"], session["delta"] , session["building"], datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S") ])
+  print(session["history"])
+  print(len(session["history"]))
   return redirect('/')
-
 @app.route('/reset', methods=['POST'])
 def reset():
   session['count'] = 0

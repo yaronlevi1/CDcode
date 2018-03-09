@@ -42,7 +42,15 @@
             </div>
             <h4>Activities:</h4>
             <div id="activities">
-               <p> You earned {{ session["delta"]}} golds from the {{ session["buildiong"]}}  </p>
+                {% if session["history"]|length>0: %}
+                    {% for i in range(0, session["history"]|length ): %}
+                        {% if session["history"][i][1] <0: %}
+                            <p id="lost"> on your {{session["history"][i][0]}} move , you went to the {{ session["history"][i][2] }} and lost {{ -1* session["history"][i][1] }} golds!; the time was {{ session["history"][i][3] }} </p>               
+                        {% else %}
+                            <p> on your {{session["history"][i][0]}} move , you went to the {{ session["history"][i][2] }} and earned {{session["history"][i][1]}} golds!; the time was {{ session["history"][i][3] }} </p>               
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </div>
             <form  action="/reset"  method="post">    
                 <input id ="again" type="submit" value="Restart game">

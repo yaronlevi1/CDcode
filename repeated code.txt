@@ -1,0 +1,11 @@
+Virtual environment
+virtualenv <envname>
+D:\Dropbox\codingdojo\CDcode\Python\myEnvironments\env2\Scripts\activate
+deactivate
+
+
+
+git add .
+git commit -m "commit num  2"
+git push -u origin master
+

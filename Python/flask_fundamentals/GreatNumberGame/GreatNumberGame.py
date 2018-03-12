@@ -15,13 +15,11 @@ def index():
   print(session["rand"])
   print(session["guess"])
   return render_template("index.html")
-
  
 @app.route('/guess', methods=['POST'])
 def guess():
   session["guess"] = int(request.form["userguess"])
   return redirect('/')
-
 
 @app.route('/reset', methods=['POST'])
 def reset():

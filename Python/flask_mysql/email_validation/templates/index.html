@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+          {% for message in messages %}
+              <p>{{message}}</p>
+          {% endfor %}
+      {% endif %}
+    {% endwith %}
+  <form action='/add_email' method='POST'>
+    <label for="email">Email:<input type="email" name="email" id="email"></label> <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+
+
+

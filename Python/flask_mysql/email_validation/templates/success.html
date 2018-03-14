@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+</head>
+<body>
+        {% with messages = get_flashed_messages() %}
+      {% if messages %}
+          {% for message in messages %}
+              <p>{{message}}</p>
+          {% endfor %}
+      {% endif %}
+    {% endwith %}
+   <h1> Emails list </h1>
+   {% for i in all_emails %}
+   <p> {{ i['email_id']  }} )      {{ i['email']  }}  ,       {{i['created_at'] }} </p>
+   {% endfor %}
+   <br><br>
+  <form action='/delete' method='POST'>
+    <label for="delete">choose ID to delete:<input type="text" name="delete" id="delete"></label> <br><br>
+    <input type="submit" value="Delete">
+  </form>
+</body>
+</html>
+

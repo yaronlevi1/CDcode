@@ -1,0 +1,63 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <form action="/register" method="post">
+                <h1>Registration</h1>
+                {% if session['login'] == False %}
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                {% endif %}      
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name"><br><br>
+                
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name"><br><br>
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"><br><br>  
+
+                <label for="password">Password </label>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="pw_confirm">PW Confirm</label>
+                <input type="password" id="pw_confirm" name="password_confirmation"><br><br>
+
+                <input id="submit" type="submit" value="Register">
+            </form>
+
+
+            <form action="/login" method="post">
+                <h1>Login</h1>
+                {% if session['login'] == True %}
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}  
+                {% endif %}
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"><br><br>  
+
+                <label for="password">Password </label>
+                <input type="password" id="password" name="password"><br><br>
+                <input id="submit" type="submit" value="Login">
+            </form>
+
+
+        </div>
+    </body>
+</html>

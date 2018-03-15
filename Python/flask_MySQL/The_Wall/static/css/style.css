@@ -1,0 +1,102 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0px auto;
+  outline: 1px dotted red;
+}
+
+#top{
+  padding:20px;
+  border-bottom: 2px black solid;
+}
+
+
+h1 {
+  display: inline-block;
+  margin-right: 500px;
+}
+
+h2 , #top form{
+  display: inline-block;
+}
+#top button {
+  color: blue ;
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+}
+
+#container {
+width: 700px;
+outline: 1px dotted green;
+display: block;
+margin: 20px auto;
+}
+
+
+#post p{
+  font-size: large;
+  font-weight: 600;
+}
+
+
+#post textarea {
+  width: 650px;
+  height: 80px;
+  margin: 10px;
+  border: 2px black solid;
+}
+
+#post input {
+  color: white;
+  display: inline-block;
+  margin-left: 542px;
+  margin-top: -25;
+  width: 120px;
+  background-color: blue;
+  vertical-align: top;
+}
+
+
+ h3{
+  margin: 0px 0px 5px 20px;
+  font-size: medium
+}
+
+h4{
+  margin: 0px 0px 10px 30px;
+  font-size: medium
+}
+
+h5{
+  margin: 0px 0px 10px 50px;
+  font-size: medium
+}
+
+h6{
+  margin: 0px 0px 10px 60px;
+  font-size: medium
+}
+
+.post textarea {
+  width: 650px;
+  height: 80px;
+  margin: 10px;
+  border: 2px black solid;
+}
+
+.post input {
+  color: white;
+  display: inline-block;
+  margin-left: 542px;
+  margin-top: -25;
+  width: 120px;
+  background-color: green;
+  vertical-align: top;
+}
